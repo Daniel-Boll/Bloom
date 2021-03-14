@@ -1,0 +1,3 @@
+[submodule "Bloom/third_party/spdlog"]
+	path = Bloom/third_party/spdlog
+	url = https://github.com/gabime/spdlog.git
