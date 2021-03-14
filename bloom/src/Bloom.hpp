@@ -9,6 +9,10 @@
 
 #include "Bloom/Application.hpp"
 
+// ------------Logger------------
+#include "Bloom/Log.hpp"
+// ------------------------------
+
 // ------------Entry point------------
 #include "Bloom/EntryPoint.hpp"
 // -----------------------------------
