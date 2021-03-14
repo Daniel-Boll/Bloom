@@ -7,8 +7,8 @@
 // $(SolutionDir)Bloom\src; will have
 // access to Bloom as <Bloom.h>
 
-#include "Bloom/Application.h"
+#include "Bloom/Application.hpp"
 
 // ------------Entry point------------
-#include "Bloom/EntryPoint.h"
+#include "Bloom/EntryPoint.hpp"
 // -----------------------------------

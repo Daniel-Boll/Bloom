@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Core.h"
+#include "Core.hpp"
 
 namespace Bloom {
 	class BLOOM_API Application {

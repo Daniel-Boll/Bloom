@@ -1,4 +1,4 @@
-#include <Bloom.h>
+#include <Bloom.hpp>
 
 /*
 	Create a Sandbox class that inherit

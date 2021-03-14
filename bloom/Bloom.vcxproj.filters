@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Bloom\Core.h">
+    <ClInclude Include="src\Bloom\EntryPoint.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bloom\Application.h">
+    <ClInclude Include="src\Bloom\Core.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bloom.h">
+    <ClInclude Include="src\Bloom\Application.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bloom\EntryPoint.h">
+    <ClInclude Include="src\Bloom.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
