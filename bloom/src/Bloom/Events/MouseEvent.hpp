@@ -4,13 +4,14 @@
 #include "Bloom/Core/MouseCodes.hpp"
 
 namespace Bloom {
+
 	class MouseMovedEvent : public Event {
 		public:
 			MouseMovedEvent(const float x, const float y)
 				: m_MouseX(x), m_MouseY(y) {}
 
-			float getX() const { return m_MouseX; }
-			float getY() const { return m_MouseY; }
+			float getMouseX() const { return m_MouseX; }
+			float getMouseY() const { return m_MouseY; }
 
 			std::string toString() const override {
 				std::stringstream ss;
@@ -18,8 +19,8 @@ namespace Bloom {
 				return ss.str();
 			}
 
-			EVENT_CLASS_CATEGORY(MouseMoved)
-			EVENT_CLASS_TYPE(EventCategoryMouse | EventCategoryInput)
+			EVENT_CLASS_TYPE(MouseMoved)
+			EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 		private:
 			const float m_MouseX, m_MouseY;
 	};

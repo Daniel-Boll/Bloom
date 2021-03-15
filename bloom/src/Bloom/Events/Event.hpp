@@ -1,11 +1,7 @@
 #pragma once
 #include <functional>
 
-#include <string>
-#include <sstream>
-
 #include "Bloom/Core/Core.hpp" 
-
 
 namespace Bloom {
 
