@@ -1,3 +1,6 @@
 [submodule "Bloom/third_party/spdlog"]
 	path = Bloom/third_party/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Bloom/third_party/GLFW"]
+	path = Bloom/third_party/GLFW
+	url = https://github.com/TheCherno/GLFW
