@@ -1,3 +1,5 @@
+#include "bmpch.hpp"
+
 #include "Log.hpp"
 
 namespace Bloom {

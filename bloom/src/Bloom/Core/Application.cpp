@@ -1,3 +1,4 @@
+#include "bmpch.hpp"
 #include "Application.hpp"
 
 #include "Bloom/Core/Log.hpp"
@@ -7,18 +8,16 @@
 
 
 namespace Bloom {
+	
 	Application::Application() {
-
+		m_Window = Window::Create();
 	}
 
 	void Application::run() {
-		WindowResizeEvent e(1280, 720);
-		BM_TRACE(e);
-
-		while (true);
+		while (m_Running) {
+			m_Window->onUpdate();
+		}
 	}
 
-	Application::~Application() {
-
-	}
+	Application::~Application() {}
 }

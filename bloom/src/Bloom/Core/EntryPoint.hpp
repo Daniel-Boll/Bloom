@@ -2,8 +2,7 @@
 
 #ifdef BM_PLATFORM_WINDOWS
 
-extern Bloom::Application* \
-			 Bloom::CreateApplication();
+extern Bloom::Application* Bloom::CreateApplication();
 
 int main(int argc, char** argv) {
 	Bloom::Log::init();
