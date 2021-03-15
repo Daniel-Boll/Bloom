@@ -10,6 +10,12 @@ workspace "Bloom"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder ($(SolutionDir))
+IncludeDir = {}
+IncludeDir["GLFW"] = "Bloom/third_party/GLFW/include"
+
+include "Bloom/third_party/GLFW"
+
 project "Bloom"
   location "Bloom"
   kind "SharedLib"
@@ -18,14 +24,23 @@ project "Bloom"
   targetdir ("bin/" .. outputdir .. "/%{prj.name}")
   objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+  pchheader "bmpch.hpp"
+  pchsource "Bloom/src/bmpch.cpp"
+
   files {
     "%{prj.name}/src/**.hpp",
     "%{prj.name}/src/**.cpp"
   }
 
   includedirs {
+    "%{prj.name}/src",
     "%{prj.name}/third_party/spdlog/include",
-    "Bloom/src"
+    "%{IncludeDir.GLFW}"
+  }
+
+  links {
+    "GLFW",
+    "opengl32.lib"
   }
 
   filter "system:windows" 
