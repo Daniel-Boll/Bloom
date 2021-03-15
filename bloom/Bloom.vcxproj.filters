@@ -10,6 +10,12 @@
     <Filter Include="Bloom\Events">
       <UniqueIdentifier>{628B84E0-4EEE-1385-F773-4C3BE3B5DF07}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Bloom.hpp" />
@@ -31,6 +37,9 @@
     <ClInclude Include="src\Bloom\Core\MouseCodes.hpp">
       <Filter>Bloom\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Bloom\Core\Window.hpp">
+      <Filter>Bloom\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Bloom\Events\ApplicationEvent.hpp">
       <Filter>Bloom\Events</Filter>
     </ClInclude>
@@ -43,6 +52,10 @@
     <ClInclude Include="src\Bloom\Events\MouseEvent.hpp">
       <Filter>Bloom\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.hpp">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bmpch.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Bloom\Core\Application.cpp">
@@ -51,5 +64,12 @@
     <ClCompile Include="src\Bloom\Core\Log.cpp">
       <Filter>Bloom\Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\Bloom\Core\Window.cpp">
+      <Filter>Bloom\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bmpch.cpp" />
   </ItemGroup>
 </Project>
