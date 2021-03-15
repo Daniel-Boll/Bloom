@@ -1,42 +1,55 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Bloom">
+      <UniqueIdentifier>{3E71E60C-AA85-0EBE-7307-B21DDFDA0AEF}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Bloom\Core">
+      <UniqueIdentifier>{560CAE37-42C4-EF84-ABCB-C8E097A28A75}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Bloom\Events">
+      <UniqueIdentifier>{628B84E0-4EEE-1385-F773-4C3BE3B5DF07}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Bloom\EntryPoint.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Bloom.hpp" />
+    <ClInclude Include="src\Bloom\Core\Application.hpp">
+      <Filter>Bloom\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bloom\Core.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Bloom\Core\Core.hpp">
+      <Filter>Bloom\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bloom\Application.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Bloom\Core\EntryPoint.hpp">
+      <Filter>Bloom\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bloom.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Bloom\Core\KeyCodes.hpp">
+      <Filter>Bloom\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Bloom\Log.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Bloom\Core\Log.hpp">
+      <Filter>Bloom\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bloom\Core\MouseCodes.hpp">
+      <Filter>Bloom\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bloom\Events\ApplicationEvent.hpp">
+      <Filter>Bloom\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bloom\Events\Event.hpp">
+      <Filter>Bloom\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bloom\Events\KeyEvent.hpp">
+      <Filter>Bloom\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bloom\Events\MouseEvent.hpp">
+      <Filter>Bloom\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Bloom\Application.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Bloom\Core\Application.cpp">
+      <Filter>Bloom\Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\Bloom\Log.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Bloom\Core\Log.cpp">
+      <Filter>Bloom\Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

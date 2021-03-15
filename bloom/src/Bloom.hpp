@@ -7,12 +7,18 @@
 // $(SolutionDir)Bloom\src; will have
 // access to Bloom as <Bloom.h>
 
-#include "Bloom/Application.hpp"
+// -----------------------Core-----------------------
+	
+	// ------------Application ------------
+	#include "Bloom/Core/Application.hpp"
+	// ------------------------------------
 
-// ------------Logger------------
-#include "Bloom/Log.hpp"
-// ------------------------------
+	// ------------Logger------------
+	#include "Bloom/Core/Log.hpp"
+	// ------------------------------
 
-// ------------Entry point------------
-#include "Bloom/EntryPoint.hpp"
-// -----------------------------------
+	// ------------Entry point------------
+	#include "Bloom/Core/EntryPoint.hpp"
+	// -----------------------------------
+
+// -------------------------------------------------
