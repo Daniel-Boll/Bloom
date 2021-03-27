@@ -14,6 +14,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Bloom/Core/Log.hpp"
+
 #ifdef BM_PLATFORM_WINDOWS
 	#include <Windows.h>
 #endif

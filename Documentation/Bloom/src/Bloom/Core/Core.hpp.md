@@ -49,6 +49,12 @@ It's simply a bitwise left shift operator that will be used on `events enum`.
   ASSERT
 </p>
 
+An `assertion` statement specifies a condition that you expect to be true at a point in your program. If that condition is not true, the assertion fails, execution of your program is interrupted, and the Assertion Failed dialog box appears.
+
+Also assertion statements compile only if `_DEBUG` is defined. Otherwise, the compiler treats assertions as null statements.
+
+[Read more here](https://docs.microsoft.com/en-us/visualstudio/debugger/c-cpp-assertions?view=vs-2019)
+
 ```cpp
 #ifdef BM_ENABLE_ASSERTS
 	#define BM_ASSERT(x, ...) {\
@@ -68,4 +74,50 @@ It's simply a bitwise left shift operator that will be used on `events enum`.
 	#define BM_ASSERT(x, ...)
 	#define BM_CORE_ASSERT(x, ...)
 #endif
+```
+
+---
+
+<p align="center">
+  BIND EVENT FUNCTION
+</p>
+
+Allow to bind an event as _callback_ for any type of function.
+
+```cpp
+#define BM_BIND_EVENT_FN(fn)																\
+ [this](auto&&... args) -> decltype(auto) {									\
+		return this->fn(std::forward<decltype(args)>(args)...); \
+ }
+```
+
+---
+
+<p align="center">
+  SCOPE
+</p>
+
+_Actually need to study more to document this part._
+
+[Future readings](https://stackoverflow.com/questions/8526598/how-does-stdforward-work)
+
+```cpp
+namespace Bloom {
+
+	template<typename T>
+	using Scope = std::unique_ptr<T>;
+
+	template<typename T, typename ... Args>
+	constexpr Scope<T> CreateScope(Args&& ... args) {
+		return std::make_unique<T>(std::forward<Args>(args)...);
+	}
+
+	template<typename T>
+	using Ref = std::shared_ptr<T>;
+
+	template<typename T, typename ... Args>
+	constexpr Ref<T> CreateRef(Args&& ... args) {
+		return std::make_shared<T>(std::forward<Args>(args)...);
+	}
+}
 ```

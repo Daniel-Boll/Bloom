@@ -9,9 +9,9 @@ namespace Bloom {
 			Application();
 			
 			void run();
+			void onEvent(Event& e);
 
 			virtual ~Application();
-
 		private:
 			Scope<Window> m_Window;
 

@@ -18,7 +18,7 @@ namespace Bloom {
 		m_Data.Width = props.Width;
 		m_Data.Height = props.Height;
 
-		//BM_CORE_INFO("Creating window {0} ({1} x {2})",\
+		BM_CORE_INFO("Creating window {0} ({1} x {2})",\
 			props.Title, props.Width, props.Height);
 
 		if (!s_GLFWInitialized) {
